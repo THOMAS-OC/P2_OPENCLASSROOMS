@@ -590,8 +590,12 @@ footer li{
 /* Responsive tablette */
 @media screen and (max-width: 992px) {
 
-    .search{
+    /* RESPONSIVE form */
+
+    form{
+        width: 70vw;
         margin: 50px auto 0 auto;
+        position: relative;
     }
 
     /* Filters responsive */
