@@ -150,7 +150,7 @@ form{
     transform: rotate(20deg) scale(1.1);
 }
 
-input{
+input[type="search"]{
     width: 55%;
     height: 100%;
     border: 1px solid #F2F2F2;
@@ -190,6 +190,20 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     filter: opacity(1);
+}
+
+/* 55 + 30 + 15 */
+
+.loupe{
+    display: none;
+    width: 16%;
+    height: 100%;
+    background-color: #0065fc;
+    color: white;
+    cursor: pointer;
+    filter: opacity(0.8);
+    line-height: 55px;
+    text-align: center;
 }
 
 /* filters */
@@ -642,6 +656,13 @@ footer li{
 /* Responsive smartphone */
 @media screen and (max-width: 768px) {
 
+    /* Responvive title */
+        h1{
+            font-size: 28px;
+        }
+
+
+
     /* RESPONSIVE HEADER */
 
         header{
@@ -675,10 +696,30 @@ footer li{
 
     /* RESPONSIVE form */
 
-    form{
-        width: 93vw;
-        margin: 50px auto 0 auto;
-    }
+        form{
+            width: 93vw;
+            margin: 50px auto 0 auto;
+            position: relative;
+        }
+
+    /* Responsive search button */
+
+        input[type="search"]{
+            width: 85%;
+        }
+
+        input[type="submit"]{
+            display: none;
+        }
+
+        .loupe{
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-radius: 20px;
+        }
+
 
     /* Accomodation responsive */
     .populars{
