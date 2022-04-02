@@ -293,7 +293,7 @@ section.accommodation{
     margin-bottom: 50px;
 }
 
-.list_accomodations{
+.list-accomodations{
     padding: 30px;
     padding-top: 50px;
     background-color: #F2F2F2;
@@ -308,13 +308,13 @@ section.accommodation{
     flex-wrap: wrap;
 }
 
-.list_accomodations h2{
+.list-accomodations h2{
     position: absolute;
     top: 20px;
     left: 20px;
 }
 
-.accomodation_item{
+.accomodation-item{
     width: 30%;
     border-radius: 20px;
     background-color: white;
@@ -326,12 +326,12 @@ section.accommodation{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
 }
 
-.accomodation_item:hover{
+.accomodation-item:hover{
     transform: scale(1.05);
     text-decoration: none;
 }
 
-.accomodation_item img{
+.accomodation-item img{
     width: 100%;
     height: 60%;
     border-top-left-radius: 20px;
@@ -339,7 +339,7 @@ section.accommodation{
     object-fit: cover;
 }
 
-.accomodation_item div{
+.accomodation-item div{
     width: 100%;
     height: 40%;
     padding: 5px;
@@ -349,7 +349,7 @@ section.accommodation{
     align-items: stretch;
 }
 
-.accomodation_item div .rating{
+.accomodation-item div .rating{
     position: static;
     display: flex;
     flex-direction: row;
@@ -554,7 +554,7 @@ footer li{
         flex-direction: column;
         margin-bottom: 50px;
     }
-    .list_accomodations{
+    .list-accomodations{
         height: 450px;
         order: 2;
         margin-bottom: 50px;
@@ -625,12 +625,12 @@ footer li{
         height: 25%;
     }
     
-    .list_accomodations{
+    .list-accomodations{
         height: 900px;
         margin-bottom: 50px;
     }
 
-    .accomodation_item{
+    .accomodation-item{
         width: 45%;
         border-radius: 20px;
         background-color: white;
@@ -738,13 +738,13 @@ footer li{
         height: 20%;
     }
 
-    .list_accomodations{
+    .list-accomodations{
         height: 1500px;
         margin-bottom: 50px;
         padding: 10px;
     }
 
-    .accomodation_item{
+    .accomodation-item{
         width: 100%;
         height: 200px;
     }
