@@ -31,7 +31,7 @@ h1{
     margin-bottom: 20px;
 }
 
-h2{
+h2.section-title{
     font-size: 25px;
     width: 1400px;
     margin: 0 auto;
@@ -45,6 +45,9 @@ h3{
 p{
     font-size: 17px;
 }
+
+
+
 
 /* END general settings */
 
@@ -122,14 +125,179 @@ nav{
 /* END LAYOUT HEADER */
 
 main{
-    width: 100vw;
-    height: 1500px;
+    max-width: 90vw;
+    margin: 0 auto;
+    width: 1400px;
     background: #333;
 }
 
+/* search button */
+form{
+    width: 400px;
+    height: 55px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.btn-locate{
+    background-color: #F2F2F2;
+    width: 15%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-locate:hover i{
+    transform: rotate(20deg) scale(1.1);
+}
+
+input[type="search"]{
+    width: 55%;
+    height: 100%;
+    border: 1px solid #F2F2F2;
+    user-select:text;
+    padding-left: 20px;
+    outline: none;
+    font-weight: bolder;
+    font-size: 17px;
+    color: red;
+    color: black;
+}
+
+input::placeholder{
+    color: #F2F2F2;
+}
+
+input:focus{
+    border: 3px solid #0065fc;
+    border-right: none;
+    padding-left: 18px;
+}
+
+input[type="submit"]{
+    width: 30%;
+    height: 100%;
+    background-color: #0065fc;
+    color: white;
+    text-align: center;
+    line-height: 55px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 17px;
+    border: none;  
+    filter: opacity(0.8);
+    padding: 0;
+}
+
+input[type="submit"]:hover{
+    filter: opacity(1);
+}
+
+.loupe{
+    display: none;
+    width: 16%;
+    height: 100%;
+    background-color: #0065fc;
+    color: white;
+    cursor: pointer;
+    filter: opacity(0.8);
+    line-height: 55px;
+    text-align: center;
+}
+
+/* FILTERS */
+
+.filters{
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filters h2{
+    line-height: 100px;
+    width: 10%;
+}
+
+.btn-filter{
+    border-radius: 30px;
+    height: 60px;
+    border : 2px solid #F2F2F2;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 70px;
+    line-height: 55px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition-property: background-color;
+    position: relative;
+}
+
+.picto-filters{
+    position: absolute;
+    background-color: #DEEBFF;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-filter:hover{
+    background-color: #DEEBFF;
+}
+
+.btn-filter:hover .picto-filters{
+    background-color: white;
+}
+
+/* active button */
+
+.btn-filter.btn-filter-active{
+    background-color: #DEEBFF;
+}
+
+.btn-filter.btn-filter-active .picto-filters{
+    background-color: white;
+}
+
+/* END FILTERS */
+
+/* Informations numbers accomodations */
+
+.filters + p{
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+.fa-info-circle{
+    color: #0065FC;
+    margin-right: 30px;
+    font-size: 30px;
+    vertical-align:-10%;
+}
+
+/* ACTIVITY */
+
+
 .activity{
     max-width: 90vw;
-    height: 650px;
+    height: 600px;
     margin: 200px auto;
     width: 1400px;
     background-color: whitesmoke;
@@ -140,7 +308,7 @@ main{
     align-items: center;
 }
 
-.activity > a{
+.activity a{
     border-radius: 20px;
     width: 20%;
     background-color: red;
@@ -153,6 +321,17 @@ main{
     color: white;
     font-weight: bold;
     font-size: 35px;
+}
+
+.activity a:hover{
+    transform: scale(1.05);
+}
+
+.activity img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
 .activity > a:nth-child(1){
@@ -217,6 +396,10 @@ footer h3{
 
 footer li{
     margin-top: 15px;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
 
 .footer-box{

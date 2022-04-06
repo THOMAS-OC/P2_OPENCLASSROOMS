@@ -192,8 +192,6 @@ input[type="submit"]:hover{
     filter: opacity(1);
 }
 
-/* 55 + 30 + 15 */
-
 .loupe{
     display: none;
     width: 16%;
