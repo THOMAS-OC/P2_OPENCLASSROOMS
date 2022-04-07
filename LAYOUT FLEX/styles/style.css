@@ -408,9 +408,38 @@ footer a:hover{
 /* END Layout Footer */
 
 
+/* --------RESPONSIVE TABLET-------- */
+
+
+
+
 /* --------RESPONSIVE SMARTPHONE-------- */
 
 @media screen and (max-width: 768px) {
+
+    /* FORM SMARTPHONE */
+
+        form{
+            width: 93vw;
+            margin: 50px auto 0 auto;
+            position: relative;
+        }
+
+        input[type="search"]{
+            width: 85%;
+        }
+
+        input[type="submit"]{
+            display: none;
+        }
+
+        .loupe{
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-radius: 20px;
+        }
 
 
     /* HEADER SMARTPHONE */
