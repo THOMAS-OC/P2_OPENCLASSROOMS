@@ -129,7 +129,7 @@ nav{
 /* END LAYOUT HEADER */
 
 main{
-    max-width: 97vw;
+    max-width: 90vw;
     margin: 0 auto;
     margin-top: 20px;
     width: 1400px;
@@ -270,31 +270,26 @@ input[type="submit"]:hover{
     background-color: white;
 }
 
-/* active button */
-
-.btn-filter.btn-filter-active{
-    background-color: #DEEBFF;
-}
-
-.btn-filter.btn-filter-active .picto-filters{
-    background-color: white;
-}
-
 /* END FILTERS */
 
 /* Informations numbers accomodations */
 
-.filters + p{
-    margin-bottom: 30px;
-    line-height: 30px;
-}
-.fa-info-circle{
-    color: #0065FC;
-    margin-right: 30px;
-    font-size: 30px;
-    vertical-align:-10%;
+
+data{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
 }
 
+.fa-info-circle{
+    color: #0065FC;
+    margin-right: 15px;
+    font-size: 30px;
+    border-radius: 50%;
+    align-self: flex-start;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+}
 
 /* ACCOMODATIONS */
 
@@ -305,8 +300,12 @@ input[type="submit"]:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
 }
 
+.accomodation-item, .popular-accomodation-item{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445); /* SHADOW FOR ALL BOX */
+}
 
 #accomodation article{
     background-color: #F2F2F2;
@@ -327,7 +326,7 @@ input[type="submit"]:hover{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     height: 80%;
     align-self: center;
 }
@@ -338,6 +337,7 @@ input[type="submit"]:hover{
     display: flex;
     align-items: center;
     padding-left: 20px;
+    font-weight: bold;
 }
 
 .accomodation-info a:hover{
@@ -362,15 +362,15 @@ input[type="submit"]:hover{
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    align-items: center;
 }
 
 .populars-accomodation-title{
-    width: 100%;
+    width: 85%;
     height: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: orange;
 }
 
 .populars-accomodation-items{
@@ -385,13 +385,17 @@ input[type="submit"]:hover{
 
 .popular-accomodation-item{
     height: 28%;
-    width: 80%;
+    width: 100%;
     background-color: red;
     border-radius: 20px;
 }
 
 .popular-accomodation-item:hover{
     transform: scale(1.05);
+}
+
+.populars-accomodations i {
+    font-size: 25px;
 }
 
 /* END ACCOMODATIONS */
@@ -548,6 +552,17 @@ footer a:hover{
             height: 35%;
         }
 
+        .populars-accomodation-items{
+            flex-direction: row;
+        }
+
+        .popular-accomodation-item{
+            height: 75%;
+            width: 30%;
+            background-color: red;
+            border-radius: 20px;
+        }
+
 
     /* END ACCOMODATIONS */
 
@@ -577,30 +592,48 @@ footer a:hover{
 
     /* ACCOMODATIONS */
 
-        #accomodation{
-            background-color: green;
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-        }
+    #accomodation{
+        background-color: green;
+        width: 100%;
+        height: 1700px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
 
 
-        #accomodation article{
-            width: 100%;
-        }
+    #accomodation article{
+        width: 100%;
+    }
 
-        article.accomodation-in-marseille{
-            order: 2;
-            height: 55%;
-        }
+    article.accomodation-in-marseille{
+        order: 2;
+        height: 60%;
+    }
 
-        article.populars-accomodations{
-            order: 1;
-            height: 40%;
-        }
+    article.populars-accomodations{
+        order: 1;
+        height: 35%;
+    }
+
+    .accomodation-item{
+        width: 45%;
+        height: 30%;
+    }
+
+    .populars-accomodation-items{
+        flex-direction: column;
+    }
+
+    .popular-accomodation-item{
+        height: 30%;
+        width: 100%;
+        background-color: red;
+        border-radius: 20px;
+    }
+
+/* END ACCOMODATIONS */
 
     /* Filters responsive */
         .filters{
@@ -610,8 +643,7 @@ footer a:hover{
         .filters h2{
             line-height: 100px;
             width: 100%;
-            padding-left: 20px;
-            text-align: center;
+            text-align: left;
         }
     
         .btn-filter{
@@ -651,11 +683,25 @@ footer a:hover{
 
 @media screen and (max-width: 768px) {
 
-    /* Responsive title */
+    /* SMARTPHONE ACCOMODATION */
+
+    .accomodation-items{
+        flex-direction: column;
+        height: 1500px;
+        width: 100%;
+    }
+    .accomodation-item{
+        width: 100%;
+        height: 15%;
+    }
+
+    /* SMARTPHONE TITLE */
 
         h1{
-            font-size: 28px;
+            font-size: 25px;
         }
+
+    
 
     /* section activities responsive */
 
@@ -759,6 +805,4 @@ footer a:hover{
         .footer-box:nth-child(1){
             margin-top: 0px;
         }
-
-
 }
