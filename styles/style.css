@@ -294,7 +294,6 @@ data{
 /* ACCOMODATIONS */
 
 #accomodation{
-    background-color: green;
     width: 100%;
     height: 550px;
     display: flex;
@@ -321,7 +320,6 @@ data{
 }
 
 .accomodation-items{
-    background-color: red;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -347,7 +345,6 @@ data{
 .accomodation-item{
     height: 35%;
     width: 30%;
-    background-color: blue;
     border-radius: 20px;
 }
 
@@ -379,13 +376,11 @@ data{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: blue;
 }
 
 .popular-accomodation-item{
     height: 28%;
     width: 100%;
-    background-color: red;
     border-radius: 20px;
 }
 
@@ -396,6 +391,41 @@ data{
 .populars-accomodations i {
     font-size: 25px;
 }
+
+
+
+/* content of accommodation cards */
+
+.accomodation-item img{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.accomodation-item div{
+    width: 100%;
+    height: 40%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.accomodation-item div .rating{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    height: 10px;
+    height: auto;
+}
+
+/* end content of accommodation cards */
 
 /* END ACCOMODATIONS */
 
@@ -527,7 +557,6 @@ footer a:hover{
     /* ACCOMODATIONS */
 
         #accomodation{
-            background-color: green;
             width: 100%;
             height: 800px;
             display: flex;
@@ -558,7 +587,6 @@ footer a:hover{
         .popular-accomodation-item{
             height: 75%;
             width: 30%;
-            background-color: red;
             border-radius: 20px;
         }
 
@@ -592,7 +620,6 @@ footer a:hover{
     /* ACCOMODATIONS */
 
     #accomodation{
-        background-color: green;
         width: 100%;
         height: 1700px;
         display: flex;
@@ -628,7 +655,6 @@ footer a:hover{
     .popular-accomodation-item{
         height: 30%;
         width: 100%;
-        background-color: red;
         border-radius: 20px;
     }
 
@@ -804,4 +830,66 @@ footer a:hover{
         .footer-box:nth-child(1){
             margin-top: 0px;
         }
+}
+
+
+
+
+
+
+/* TEST */
+.popular-accomodation-item{
+    height: 25%;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.popular-accomodation-item .description{
+    width: 66%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    position: relative;
+    padding-left: 5px;
+}
+
+.popular-accomodation-item img{
+    width: 33%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.popular-accomodation-item:hover{
+    transform: scale(1.05);
+}
+
+.popular-accomodation-item p{
+    margin-top: 5px;
+}
+
+.popular-accomodation-item .rating{
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+}
+
+.popular-accomodation-item span{
+    font-weight: bolder;
+}
+
+.fa-star{
+    font-size: 17px;
+    color : #0065FC;
+}
+
+.fa-star.gray-star{
+    color : #F2F2F2;
 }
