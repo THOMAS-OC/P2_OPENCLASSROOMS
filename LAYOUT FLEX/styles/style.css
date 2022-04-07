@@ -428,7 +428,6 @@ footer a:hover{
         }
 
     /* END SECTION ACTIVITIES */
-
     
 }
 
@@ -471,6 +470,21 @@ footer a:hover{
 
 
     /* section activities responsive */
+
+    .activity{
+        height: 1500px;
+        flex-direction: column;
+    }
+
+    .activity > a:nth-child(odd){
+        height: 15%;
+        width: 100%;
+    }
+    
+    .activity > a:nth-child(even){
+        height: 15%;
+        width: 100%;
+    }
 
 
 
