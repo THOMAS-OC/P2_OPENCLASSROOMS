@@ -316,14 +316,12 @@ input[type="submit"]:hover{
 .accomodation-in-marseille{
     width: 65%;
     height: 100%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.accomodation-in-marseille > div{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.accomodation-items{
     background-color: red;
     display: flex;
     justify-content: space-around;
@@ -331,18 +329,19 @@ input[type="submit"]:hover{
     flex-wrap: wrap;
     width: 90%;
     height: 80%;
+    align-self: center;
 }
 
-.accomodation-in-marseille > p{
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
+.accomodation-title, .accomodation-info{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
 }
 
-.accomodation-in-marseille > h2{
-    position: absolute;
-    top: 20px;
-    left: 25px;
+.accomodation-info a:hover{
+    text-decoration: underline;
 }
 
 .accomodation-item{
@@ -356,12 +355,44 @@ input[type="submit"]:hover{
     transform: scale(1.05);
 }
 
-article.populars-accomodations{
+/* POPULARS ACCOMODATIONS */
+.populars-accomodations{
     width: 32%;
     height: 100%;
-
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
+.populars-accomodation-title{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+}
+
+.populars-accomodation-items{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue;
+}
+
+.popular-accomodation-item{
+    height: 28%;
+    width: 80%;
+    background-color: red;
+    border-radius: 20px;
+}
+
+.popular-accomodation-item:hover{
+    transform: scale(1.05);
+}
 
 /* END ACCOMODATIONS */
 
