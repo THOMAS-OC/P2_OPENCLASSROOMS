@@ -409,15 +409,22 @@ footer a:hover{
 
 
 /* --------RESPONSIVE TABLET-------- */
+@media screen and (max-width: 992px) { 
+    /* TABLET FORM */
 
+    form{
+        width: 70vw;
+        margin: 50px auto 0 auto;
+        position: relative;
+    }
 
-
+}
 
 /* --------RESPONSIVE SMARTPHONE-------- */
 
 @media screen and (max-width: 768px) {
 
-    /* FORM SMARTPHONE */
+    /* SMARTPHONE FORM */
 
         form{
             width: 93vw;
@@ -442,7 +449,7 @@ footer a:hover{
         }
 
 
-    /* HEADER SMARTPHONE */
+    /* SMARTPHONE HEADER */
 
         header{
             height: 150px;
@@ -474,7 +481,7 @@ footer a:hover{
         }
 
 
-    /* FOOTER SMARTPHONE */
+    /* SMARTPHONE FOOTER */
         footer{
             padding-left: 0;
         }
