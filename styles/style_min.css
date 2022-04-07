@@ -455,9 +455,8 @@ footer a:hover {
         flex-direction: row;
     }
     .popular-accomodation-item {
-        height: 75%;
-        width: 30%;
-        border-radius: 20px;
+        height: 65% !important;
+        width: 30% !important;
     }
     .activity {
         flex-direction: row;
@@ -494,9 +493,8 @@ footer a:hover {
         flex-direction: column;
     }
     .popular-accomodation-item {
-        height: 30%;
-        width: 100%;
-        border-radius: 20px;
+        height: 30% !important;
+        width: 100% !important;
     }
     .filters {
         justify-content: center;
@@ -609,7 +607,6 @@ footer a:hover {
     height: 25%;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
-    border-radius: 20px;
     background-color: #fff;
     cursor: pointer;
     display: flex;
