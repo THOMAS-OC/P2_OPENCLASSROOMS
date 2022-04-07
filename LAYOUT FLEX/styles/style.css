@@ -31,12 +31,15 @@ h1{
     margin-bottom: 20px;
 }
 
+h2{
+    font-size: 25px;
+}
+
 h2.section-title{
     font-size: 25px;
     width: 1400px;
     margin: 50px auto 20px auto;
     max-width: 90vw;
-
 }
 
 h3{
@@ -126,8 +129,9 @@ nav{
 /* END LAYOUT HEADER */
 
 main{
-    max-width: 90vw;
+    max-width: 97vw;
     margin: 0 auto;
+    margin-top: 20px;
     width: 1400px;
 }
 
@@ -435,6 +439,22 @@ footer a:hover{
 /* --------RESPONSIVE TABLET-------- */
 @media screen and (max-width: 992px) { 
 
+    /* Filters responsive */
+        .filters{
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .filters h2{
+            line-height: 100px;
+            width: 100%;
+            padding-left: 20px;
+            text-align: center;
+        }
+    
+        .btn-filter{
+            margin-bottom: 10px;
+        }
+
     /* section activities responsive */
 
         .activity{
@@ -468,23 +488,28 @@ footer a:hover{
 
 @media screen and (max-width: 768px) {
 
+    /* Responsive title */
+
+        h1{
+            font-size: 28px;
+        }
 
     /* section activities responsive */
 
-    .activity{
-        height: 1500px;
-        flex-direction: column;
-    }
+        .activity{
+            height: 1500px;
+            flex-direction: column;
+        }
 
-    .activity > a:nth-child(odd){
-        height: 15%;
-        width: 100%;
-    }
-    
-    .activity > a:nth-child(even){
-        height: 15%;
-        width: 100%;
-    }
+        .activity > a:nth-child(odd){
+            height: 15%;
+            width: 100%;
+        }
+        
+        .activity > a:nth-child(even){
+            height: 15%;
+            width: 100%;
+        }
 
 
 
