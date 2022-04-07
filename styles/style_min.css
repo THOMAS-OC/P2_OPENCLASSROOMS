@@ -11,6 +11,7 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
+    color: black;
 }
 a:hover {
     text-decoration: none;
@@ -386,10 +387,7 @@ data {
 .activity > a:nth-child(4) {
     height: 100%;
 }
-.activity > a:nth-child(5) {
-    height: 45%;
-}
-.activity > a:nth-child(6) {
+.activity > a:nth-child(5), .activity > a:nth-child(6){
     height: 45%;
 }
 .activity h3 {
@@ -464,14 +462,11 @@ footer a:hover {
     .activity {
         flex-direction: row;
     }
-    .activity > a:nth-child(odd) {
-        height: 45%;
-        width: 31%;
+    .activity > a{
+        height: 45% !important;
+        width: 31% !important;
     }
-    .activity > a:nth-child(even) {
-        height: 45%;
-        width: 31%;
-    }
+
 }
 @media screen and (max-width: 992px) {
     #accomodation {
@@ -518,13 +513,9 @@ footer a:hover {
     .activity {
         height: 1100px;
     }
-    .activity > a:nth-child(odd) {
-        height: 28%;
-        width: 47%;
-    }
-    .activity > a:nth-child(even) {
-        height: 28%;
-        width: 47%;
+    .activity > a{
+        height: 28% !important;
+        width: 47% !important;
     }
     form {
         width: 70vw;
@@ -549,13 +540,9 @@ footer a:hover {
         height: 1500px;
         flex-direction: column;
     }
-    .activity > a:nth-child(odd) {
-        height: 15%;
-        width: 100%;
-    }
-    .activity > a:nth-child(even) {
-        height: 15%;
-        width: 100%;
+    .activity > a {
+        height: 15% !important;
+        width: 100% !important;
     }
     form {
         width: 93vw;
