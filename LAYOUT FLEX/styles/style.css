@@ -295,8 +295,68 @@ input[type="submit"]:hover{
     vertical-align:-10%;
 }
 
-/* ACTIVITY */
 
+/* ACCOMODATIONS */
+
+#accomodation{
+    background-color: green;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#accomodation article{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.accomodation-in-marseille{
+    width: 65%;
+    height: 100%;
+
+}
+
+.accomodation-in-marseille > div{
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+}
+
+.accomodation-in-marseille > p{
+    height: 10%;
+}
+
+.accomodation-item{
+    height: 35%;
+    width: 30%;
+    background-color: blue;
+    border-radius: 20px;
+}
+
+.accomodation-item:hover{
+    transform: scale(1.05);
+}
+
+
+
+article.populars-accomodations{
+    width: 32%;
+    height: 100%;
+}
+
+
+/* END ACCOMODATIONS */
+
+
+
+/* ACTIVITIES */
 
 .activity{
     max-width: 90vw;
@@ -375,6 +435,8 @@ input[type="submit"]:hover{
     padding-left: 10px;
 }
 
+/* END ACTIVITIES */
+
 /* Layout Footer */
 footer{
     background-color: #F2F2F2;
@@ -416,6 +478,38 @@ footer a:hover{
 /* Responsive desktop */
 @media screen and (max-width: 1400px) {
 
+
+    /* ACCOMODATIONS */
+
+        #accomodation{
+            background-color: green;
+            width: 100%;
+            height: 800px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+        #accomodation article{
+            width: 100%;
+        }
+
+        article.accomodation-in-marseille{
+            order: 2;
+            height: 60%;
+        }
+
+        article.populars-accomodations{
+            order: 1;
+            height: 35%;
+        }
+
+
+    /* END ACCOMODATIONS */
+
+
     /* section activities responsive */
         .activity{
             flex-direction: row;
@@ -438,6 +532,33 @@ footer a:hover{
 
 /* --------RESPONSIVE TABLET-------- */
 @media screen and (max-width: 992px) { 
+
+    /* ACCOMODATIONS */
+
+        #accomodation{
+            background-color: green;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+        #accomodation article{
+            width: 100%;
+        }
+
+        article.accomodation-in-marseille{
+            order: 2;
+            height: 55%;
+        }
+
+        article.populars-accomodations{
+            order: 1;
+            height: 40%;
+        }
 
     /* Filters responsive */
         .filters{
