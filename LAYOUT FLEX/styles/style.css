@@ -316,21 +316,33 @@ input[type="submit"]:hover{
 .accomodation-in-marseille{
     width: 65%;
     height: 100%;
-
+    position: relative;
 }
 
 .accomodation-in-marseille > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: red;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     height: 80%;
 }
 
 .accomodation-in-marseille > p{
-    height: 10%;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+.accomodation-in-marseille > h2{
+    position: absolute;
+    top: 20px;
+    left: 25px;
 }
 
 .accomodation-item{
@@ -344,11 +356,10 @@ input[type="submit"]:hover{
     transform: scale(1.05);
 }
 
-
-
 article.populars-accomodations{
     width: 32%;
     height: 100%;
+
 }
 
 
