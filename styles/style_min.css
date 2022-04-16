@@ -97,7 +97,7 @@ main {
 
 /* FORM */
 
-form {
+.form {
     width: 400px;
     height: 55px;
     border-radius: 20px;
@@ -106,7 +106,7 @@ form {
     margin-top: 50px;
     overflow: hidden;
 }
-.btn-locate {
+.form__position {
     background-color: #f2f2f2;
     width: 15%;
     height: 100%;
@@ -118,10 +118,10 @@ form {
     align-items: center;
     cursor: pointer;
 }
-.btn-locate:hover i {
+.form__position:hover i {
     transform: rotate(20deg) scale(1.1);
 }
-input[type="search"] {
+.form__input {
     width: 55%;
     height: 100%;
     border: 1px solid #f2f2f2;
@@ -132,16 +132,16 @@ input[type="search"] {
     font-size: 17px;
     color: #000;
 }
-input::placeholder {
+.form__input::placeholder {
     color: #f2f2f2;
     font-weight: bolder;
 }
-input:focus {
+.form__input:focus {
     border: 3px solid #0065fc;
     border-right: none;
     padding-left: 18px;
 }
-input[type="submit"] {
+.form__button {
     width: 30%;
     height: 100%;
     background-color: #0065fc;
@@ -155,10 +155,10 @@ input[type="submit"] {
     filter: opacity(0.8);
     padding: 0;
 }
-input[type="submit"]:hover {
+.form__button:hover {
     filter: opacity(1);
 }
-.loupe {
+.form__button--glass {
     display: none;
     width: 16%;
     height: 100%;
@@ -598,7 +598,7 @@ data {
         height: 28%;
         width: 47%;
     }
-    form {
+    .form {
         width: 70vw;
         margin: 50px auto 0 auto;
         position: relative;
@@ -658,18 +658,18 @@ data {
         height: 15%;
         width: 100%;
     }
-    form {
+    .form {
         width: 93vw;
         margin: 50px auto 0 auto;
         position: relative;
     }
-    input[type="search"] {
+    .form__input {
         width: 85%;
     }
-    input[type="submit"] {
+    .form__button {
         display: none;
     }
-    .loupe {
+    .form__button--glass {
         display: block;
         position: absolute;
         right: 0;
