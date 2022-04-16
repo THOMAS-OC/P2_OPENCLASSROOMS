@@ -183,7 +183,7 @@ input[type="submit"]:hover {
     line-height: 100px;
     width: 10%;
 }
-.btn-filter {
+.filter__button {
     border-radius: 30px;
     height: 60px;
     border: 2px solid #f2f2f2;
@@ -197,7 +197,7 @@ input[type="submit"]:hover {
     transition-property: background-color;
     position: relative;
 }
-.picto-filters {
+.filter__picto {
     position: absolute;
     background-color: #deebff;
     height: 56px;
@@ -211,10 +211,10 @@ input[type="submit"]:hover {
     justify-content: center;
     align-items: center;
 }
-.btn-filter:hover {
+.filter__button:hover {
     background-color: #deebff;
 }
-.btn-filter:hover .picto-filters {
+.filter__button:hover .filter__picto {
     background-color: #fff;
 }
 
@@ -588,7 +588,7 @@ data {
         width: 100%;
         text-align: left;
     }
-    .btn-filter {
+    .filter__button {
         margin-bottom: 10px;
     }
     .activity {
