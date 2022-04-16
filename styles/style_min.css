@@ -333,17 +333,17 @@ data {
 }
 .populars-accomodation-title {
     width: 85%;
-    height: 10%;
+    height: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .populars-accomodation-items {
     width: 100%;
-    height: 90%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .popular-accomodation-item {
@@ -506,7 +506,7 @@ footer a:hover {
 @media screen and (max-width: 1400px) {
     #accomodation {
         width: 100%;
-        height: 800px;
+        height: 900px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -523,11 +523,18 @@ footer a:hover {
         order: 1;
         height: 35%;
     }
+
+    .populars-accomodation-title{
+        height: 30%;
+        width: 92%;
+    }
+
     .populars-accomodation-items {
         flex-direction: row;
+        width: 92%;
     }
     .popular-accomodation-item {
-        height: 65% !important;
+        height: 55% !important;
         width: 30% !important;
     }
     .activity {
@@ -569,7 +576,7 @@ footer a:hover {
     }
     .popular-accomodation-item {
         height: 30% !important;
-        width: 100% !important;
+        width: 85% !important;
     }
     .filters {
         justify-content: center;
@@ -618,7 +625,17 @@ footer a:hover {
     }
     .populars-accomodation-title{
         width: 100%;
+        height: 15%;
     }
+
+    .populars-accomodation-items{
+        width: 100%;
+    }
+
+    .popular-accomodation-item{
+        width: 100% !important;
+    }
+
     .accomodation-items {
         flex-direction: column;
         height: 1500px;
