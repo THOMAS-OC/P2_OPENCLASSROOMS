@@ -418,7 +418,7 @@ data {
     justify-content: space-between;
     align-items: center;
 }
-.activity a {
+.activity__link {
     border-radius: 20px;
     width: 23%;
     overflow: hidden;
@@ -432,31 +432,32 @@ data {
     font-size: 35px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
 }
-.activity a:hover {
+.activity__link:hover {
     transform: scale(1.05);
 }
-.activity img {
+.activity__picture {
     height: 100%;
     width: 100%;
     border-radius: 20px;
     object-fit: cover;
 }
-.activity > a:nth-child(1) {
+.activity__link--1 {
     height: 100%;
 }
-.activity > a:nth-child(2) {
+.activity__link--2 {
     height: 55%;
 }
-.activity > a:nth-child(3) {
+.activity__link--3 {
     height: 35%;
 }
-.activity > a:nth-child(4) {
+.activity__link--4 {
     height: 100%;
 }
-.activity > a:nth-child(5), .activity > a:nth-child(6){
+.activity__link--5, .activity__link--6{
     height: 45%;
 }
-.activity h3 {
+
+.activity__title {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -540,7 +541,7 @@ data {
     .activity {
         flex-direction: row;
     }
-    .activity > a{
+    .activity__link{
         height: 45% !important;
         width: 31% !important;
     }
@@ -593,9 +594,9 @@ data {
     .activity {
         height: 1100px;
     }
-    .activity > a{
-        height: 28% !important;
-        width: 47% !important;
+    .activity__link{
+        height: 28%;
+        width: 47%;
     }
     form {
         width: 70vw;
@@ -653,7 +654,7 @@ data {
         height: 1500px;
         flex-direction: column;
     }
-    .activity > a {
+    .activity__link {
         height: 15% !important;
         width: 100% !important;
     }
