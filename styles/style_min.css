@@ -128,13 +128,13 @@ main {
     user-select: text;
     padding-left: 20px;
     outline: 0;
-    font-weight: bolder;
+    font-weight:800;
     font-size: 17px;
     color: #000;
 }
 .form__input::placeholder {
     color: #f2f2f2;
-    font-weight: bolder;
+    font-weight: 800;
 }
 .form__input:focus {
     border: 3px solid #0065fc;
@@ -259,7 +259,7 @@ data {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: white;
+    background-color: #f2f2f2;
 }
 .accomodation__box {
     display : flex;
@@ -533,10 +533,10 @@ data {
         flex-direction: row;
         width: 92%;
     }
-    .popular__accomodation__description {
+    /* .popular__accomodation__description {
         height: 55%;
         width: 30%;
-    }
+    } */
     .activity {
         flex-direction: row;
     }
