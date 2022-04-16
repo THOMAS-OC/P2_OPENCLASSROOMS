@@ -289,6 +289,7 @@ data {
     width: 30%;
     border-radius: 20px;
     padding: 5px;
+    background-color: #FFFFFF;
 }
 .accomodation-item:hover {
     transform: scale(1.05);
@@ -347,7 +348,7 @@ data {
 }
 .popular-accomodation-item {
     height: 28%;
-    width: 100%;
+    width: 80%;
     border-radius: 20px;
 }
 .popular-accomodation-item:hover {
@@ -359,7 +360,7 @@ data {
 
 .popular-accomodation-item {
     height: 25%;
-    width: 100%;
+    width: 85%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
     background-color: #fff;
     cursor: pointer;
