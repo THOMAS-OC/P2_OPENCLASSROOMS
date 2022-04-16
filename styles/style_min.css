@@ -542,8 +542,8 @@ data {
         flex-direction: row;
     }
     .activity__link{
-        height: 45% !important;
-        width: 31% !important;
+        height: 45%;
+        width: 31%;
     }
 
 }
@@ -655,8 +655,8 @@ data {
         flex-direction: column;
     }
     .activity__link {
-        height: 15% !important;
-        width: 100% !important;
+        height: 15%;
+        width: 100%;
     }
     form {
         width: 93vw;
