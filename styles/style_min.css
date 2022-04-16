@@ -246,22 +246,22 @@ data {
     align-items: center;
     margin-top: 50px;
 }
-.accomodation-item,
-.popular-accomodation-item {
+.accomodation__item,
+.popular__accomodation__item {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
 }
 #accomodation article {
-    background-color: #f2f2f2;
     border-radius: 20px;
 }
-.accomodation-in-marseille {
+.accomodation__in__marseille {
     width: 65%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: white;
 }
-.accomodation-items {
+.accomodation__box {
     display : flex;
     flex-direction: column;
     justify-content : space-between;
@@ -271,8 +271,8 @@ data {
     height : 70%;
     align-self : center;
 }
-.accomodation-info,
-.accomodation-title {
+.accomodation__info,
+.accomodation__title {
     height: 15%;
     width: 96%;
     display: flex;
@@ -281,28 +281,28 @@ data {
     font-weight: 700;
     align-self: flex-end;
 }
-.accomodation-info a:hover {
+.accomodation__info a:hover {
     text-decoration: underline;
 }
-.accomodation-item {
+.accomodation__item {
     height: 45%;
     width: 30%;
     border-radius: 20px;
     padding: 5px;
     background-color: #FFFFFF;
 }
-.accomodation-item:hover {
+.accomodation__item:hover {
     transform: scale(1.05);
 }
 
-.accomodation-item img {
+.accomodation__img {
     width: 100%;
     height: 60%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
 }
-.accomodation-item div {
+.accomodation__description {
     width: 100%;
     height: 40%;
     padding: 5px;
@@ -311,7 +311,7 @@ data {
     justify-content: space-between;
     align-items: stretch;
 }
-.accomodation-item div .rating {
+.accomodation__description .rating {
     position: static;
     display: flex;
     flex-direction: row;
@@ -324,21 +324,22 @@ data {
 
 /* POPULARS ACCOMODATION */
 
-.populars-accomodations {
+.populars__accomodations {
     width: 32%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f2f2f2;
 }
-.populars-accomodation-title {
+.populars__accomodations__title {
     width: 85%;
     height: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.populars-accomodation-items {
+.populars__accomodation__box {
     width: 100%;
     height: 80%;
     display: flex;
@@ -346,19 +347,19 @@ data {
     justify-content: space-between;
     align-items: center;
 }
-.popular-accomodation-item {
+.popular__accomodation__item {
     height: 28%;
     width: 80%;
     border-radius: 20px;
 }
-.popular-accomodation-item:hover {
+.popular__accomodation__item:hover {
     transform: scale(1.05);
 }
-.populars-accomodations i {
+.populars__accomodations__title i {
     font-size: 25px;
 }
 
-.popular-accomodation-item {
+.popular__accomodation__item {
     height: 25%;
     width: 85%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
@@ -368,7 +369,7 @@ data {
     justify-content: space-between;
     padding: 5px;
 }
-.popular-accomodation-item .description {
+.popular__accomodation__description {
     width: 66%;
     height: 100%;
     display: flex;
@@ -377,24 +378,24 @@ data {
     position: relative;
     padding-left: 5px;
 }
-.popular-accomodation-item img {
+.popular__accomodation__img {
     width: 33%;
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-.popular-accomodation-item:hover {
+.popular__accomodation__item:hover {
     transform: scale(1.05);
 }
-.popular-accomodation-item p {
+.popular__accomodation__description {
     margin-top: 5px;
 }
-.popular-accomodation-item .rating {
+.popular__accomodation__description .rating {
     position: absolute;
     bottom: 0;
     left: 5px;
 }
-.popular-accomodation-item span {
+.popular__accomodation__description span {
     font-weight: bolder;
 }
 .fa-star {
@@ -513,30 +514,28 @@ data {
         align-items: center;
         flex-direction: column;
     }
-    #accomodation article {
-        width: 100%;
-    }
-    .accomodation-in-marseille {
+
+    .accomodation__in__marseille {
         order: 2;
         height: 60%;
     }
-    .populars-accomodations {
+    .populars__accomodations {
         order: 1;
         height: 35%;
     }
 
-    .populars-accomodation-title{
+    .populars__accomodations__title{
         height: 30%;
         width: 92%;
     }
 
-    .populars-accomodation-items {
+    .populars__accomodation__box {
         flex-direction: row;
         width: 92%;
     }
-    .popular-accomodation-item {
-        height: 55% !important;
-        width: 30% !important;
+    .popular__accomodation__description {
+        height: 55%;
+        width: 30%;
     }
     .activity {
         flex-direction: row;
@@ -559,25 +558,24 @@ data {
         align-items: center;
         flex-direction: column;
     }
-    #accomodation article {
+    .accomodation__in__marseille {
+        height: 60%;
         width: 100%;
     }
-    .accomodation-in-marseille {
-        height: 60%;
-    }
-    .populars-accomodations {
+    .populars__accomodations {
         height: 35%;
+        width: 100%;
     }
-    .accomodation-item {
+    .accomodation__item {
         width: 45%;
         height: 30%;
     }
-    .populars-accomodation-items {
+    .populars__accomodation__box {
         flex-direction: column;
     }
-    .popular-accomodation-item {
-        height: 30% !important;
-        width: 85% !important;
+    .popular__accomodation__item {
+        height: 30%;
+        width: 85%;
     }
     .filters {
         justify-content: center;
@@ -611,39 +609,39 @@ data {
     #accomodation {
         height: auto;
     }
-    .accomodation-title{
+    .accomodation__title{
         margin-top: 50px;
         padding: 0;
     }
-    .accomodation-in-marseille{
-        background-color: transparent !important;
+    .accomodation__in__marseille{
+        background-color: transparent;
     }
-    .populars-accomodations{
+    .populars__accomodations{
         height: 550px;
-        width: 110% !important;
+        width: 110%;
         padding: 0 20px;
-        border-radius: 0px !important;
+        border-radius: 0px;
     }
-    .populars-accomodation-title{
+    .populars__accomodations__title{
         width: 100%;
         height: 15%;
     }
 
-    .populars-accomodation-items{
+    .populars__accomodation__box{
         width: 100%;
     }
 
-    .popular-accomodation-item{
-        width: 100% !important;
+    .popular__accomodation__item{
+        width: 100%;
     }
 
-    .accomodation-items {
+    .accomodation__box {
         flex-direction: column;
         height: 1500px;
         width: 100%;
         margin-top: 30px;
     }
-    .accomodation-item {
+    .accomodation__item {
         width: 100%;
         height: 15%;
     }
