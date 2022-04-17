@@ -12,7 +12,7 @@
 
         <!-- import stylesheet -->
         <link rel="stylesheet" href="styles/reset.css">
-        <link rel="stylesheet" href="styles/style_min.css">
+        <link rel="stylesheet" href="styles/style.css">
 
         <!-- import fonts -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -33,17 +33,17 @@
 
 <!-- // HEADER // -->
 
-    <header>
+    <header class="header">
 
-        <nav>
+        <nav class="header__nav">
 
-            <a href="#" class="logo">
-                <img class="logo-booki" src="images/logo/Booki_crop.png" alt="Logo Booki, site de réservation en ligne">
+            <a href="#" class="header__logo">
+                <img class="header__img" src="images/logo/Booki_crop.png" alt="Logo Booki, site de réservation en ligne">
             </a>
 
-            <div class="links-header">
-                <a href="#accomodation"> Hébergements </a>
-                <a href="#activity"> Activités </a>
+            <div class="header__links">
+                <a class="header__link header__link--accomodation" href="#accomodation"> Hébergements </a>
+                <a class="header__link header__link--activity" href="#activity"> Activités </a>
             </div>
 
         </nav>
@@ -370,7 +370,7 @@
     <footer class="footer">
         <nav class="footer__flex">
             <div class="footer__box">
-                <h3 class="footer__title">À propos</h3>
+                <h3 class="footer__subtitle">À propos</h3>
                 <ul>
                     <li class="footer__link"><a href="#">Fonctionnement du site</a></li>
                     <li class="footer__link"><a href="#">Conditions générales de ventes</a></li>
@@ -378,7 +378,7 @@
                 </ul>
             </div>
             <div class="footer__box">
-                <h3 class="footer__title">Nos hébergements</h3>
+                <h3 class="footer__subtitle">Nos hébergements</h3>
                 <ul>
                     <li class="footer__link"><a href="#">Charte qualité</a></li>
                     <li class="footer__link"><a href="#">Soumettre votre hôtel</a></li>
@@ -386,7 +386,7 @@
                 </ul>
             </div>
             <div class="footer__box">
-                <h3 class="footer__title">Assistance</h3>
+                <h3 class="footer__subtitle">Assistance</h3>
                 <ul>
                     <li class="footer__link"><a href="#">Centre d'aide</a></li>
                     <li class="footer__link"><a href="#">Nous contacter</a></li>
