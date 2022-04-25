@@ -128,13 +128,14 @@ main {
     user-select: text;
     padding-left: 20px;
     outline: 0;
-    font-weight:800;
+    font-weight: 800;
     font-size: 17px;
     color: #000;
 }
 .form__input::placeholder {
-    color: #f2f2f2;
+    color: #000;
     font-weight: 800;
+    opacity: 1;
 }
 .form__input:focus {
     border: 3px solid #0065fc;
