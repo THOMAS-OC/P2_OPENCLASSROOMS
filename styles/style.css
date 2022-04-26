@@ -3,6 +3,8 @@
     font-family: Raleway, sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    transition-duration: 0.2s;
+    transition-property: transform;
 }
 a {
     text-decoration: none;
@@ -153,12 +155,9 @@ main {
     font-weight: bolder;
     font-size: 17px;
     border: none;
-    filter: opacity(0.8);
     padding: 0;
 }
-.form__button:hover {
-    filter: opacity(1);
-}
+
 .form__button--glass {
     display: none;
     width: 16%;
@@ -166,7 +165,6 @@ main {
     background-color: #0065fc;
     color: #fff;
     cursor: pointer;
-    filter: opacity(0.8);
     line-height: 55px;
     text-align: center;
 }
@@ -218,8 +216,6 @@ main {
 .filter__button:hover .filter__picto {
     background-color: #fff;
 }
-
-
 
 
 data {
@@ -290,7 +286,7 @@ data {
     width: 30%;
     border-radius: 20px;
     padding: 5px;
-    background-color: #FFFFFF;
+    background-color: white;
 }
 .accomodation__item:hover {
     transform: scale(1.05);
@@ -361,7 +357,7 @@ data {
     height: 30%;
     width: 85%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
-    background-color: #fff;
+    background-color: white;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
